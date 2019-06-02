@@ -1,0 +1,40 @@
+<!--pages/my/my.wxml-->
+<nav-bar navbar-data="{{nvabarData}}"></nav-bar>
+<view class='xiaozhu_my'>
+<image src="{{indexlist[1].photo}}"></image>
+  <view class='my_tx'>
+    <view>
+      <image src='{{loginlist[0].photo}}'></image>
+    </view>
+    <text>{{loginlist[0].name}}</text>
+  </view>
+  <view class='my_input'>
+    <button class='text-left button1' bindtap='order'>
+      <view class='w-35b'>
+        <image src='/pages/img/dingdang.png'></image>
+        <text>全部订单</text>
+      </view>
+      <view>
+        <image src='/pages/img/right.png'></image>
+      </view>
+    </button>
+    <button class='text-left button1'>
+      <view class='w-35b'>
+        <image src='/pages/img/liaotian.png'></image>
+        <text>聊天记录</text>
+      </view>
+      <view>
+        <image src='/pages/img/right.png'></image>
+      </view>
+    </button>
+    <button class='text-left button1'>
+      <view class='w-35b'>
+        <image src='/pages/img/daijinquan.png'></image>
+        <text>代金券</text>
+      </view>
+      <view>
+        <image src='/pages/img/right.png'></image>
+      </view>
+    </button>
+  </view>
+</view>

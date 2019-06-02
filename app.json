@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail_one/detail_one",
+    "pages/order/order",
+    "pages/know/know",
+    "pages/details/details",
+    "pages/my/my",
+    "pages/logs/logs",
+    "pages/hpoto1/hpoto1",
+    "commpents/navbar/navbar",
+    "pages/describe/descride"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小猪短租",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "selectedColor": "#f00",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发现",
+        "iconPath": "pages/img/navimenu_faxian_nosel.png",
+        "selectedIconPath": "pages/img/navimenu_faxian_sel.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我",
+        "iconPath": "pages/img/navimenu_my_nosel.png",
+        "selectedIconPath": "pages/img/navimenu_my_sel.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,216 @@
+<!--pages/detail_one/detail_one.wxml-->
+<nav-bar navbar-data="{{nvabarData}}"></nav-bar>
+<!-- 整体 -->
+<view class='detail_one'>
+  <view class='d_one'>
+  <!-- 图片价格 -->
+    <image src='{{list[2].photo}}'></image>
+    <view class='do-text'>
+      <view>
+        <text>￥{{list[2].price}}</text>
+      </view>
+      <view>
+        <image src='/pages/img/white-dingwei.png'></image>
+        <text>广东省广州市海珠区礼岗路海信街</text>
+      </view>
+    </view>
+  <!-- 优势 -->
+    <view class='merit'>
+        <view>
+          <image src='/pages/img/mai.png'></image>
+        </view>
+        <scroll-view scroll-x="true">
+          <text>速订.先住后付.特价.优品.差旅首选.免押金.长租优惠.验证.实拍.智能门牌</text>
+        </scroll-view>
+    </view>
+    <!-- 标题 --> 
+    <view>{{list[2].title}}</view>
+    <!-- 优惠信息-头部 -->
+    <view class='special' bindtap='chooseSezi'>
+      <text>{{list[2].o_price}}</text>
+      <text>限时{{list[2].o_price}}，原价￥{{list[2].p_title}}</text>
+      <image class="tubiao" src='/pages/img/dian.png'></image>
+    </view>
+    <!-- 优惠信息-弹出框 -->
+    <view class='tiao'>
+      <view class='maskLayer' wx:if="{{chooseSize}}" bindtap='hideModal'>
+        <image class="tubiao" src='/pages/img/X.png'></image>
+        <view>促销活动</view>
+      </view>
+      <view class='choose' wx:if="{{chooseSize}}" animation='{{animationData}}'>
+          <!-- 优惠信息1 -->
+          <view>
+            <text>{{list[2].o_price}}</text>
+            <text>限时{{list[2].o_price}}，原价￥{{list[2].p_title}}</text>
+          </view>
+          <!-- 优惠信息2 -->
+          <view>
+            <text>满30天8.5折</text>
+            <text>满30天8.5折</text>
+          </view>
+          <!-- 优惠信息3 -->
+          <view>
+            <text>满7天9.5折</text>
+            <text>满7天9.5折</text>
+          </view>
+      </view>
+    </view>
+    <!-- 选项卡 -->
+    <view class='TabSwiper'>
+        <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'>
+          <image src='/pages/img/bieshu.png'></image>
+          <view>整套出租</view>
+          <view class='zhegai' data-current = "0" bindtap='checkCurrent'></view>
+        </view>
+        <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'>
+          <image src='/pages/img/me_tenant.png'></image>
+          <view>宜住4人</view>
+          <view class='zhegai' data-current = "1" bindtap='checkCurrent'></view>
+        </view>
+        <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}'>
+          <image src='/pages/img/chuang.png'></image>
+          <view>共两张床</view>
+          <view class='zhegai' data-current = "2" bindtap='checkCurrent'></view>
+        </view>
+    </view>
+    <swiper current="{{currentData}}" class='swiper' duration="300" bindchange="bindchange">
+      <swiper-item><view class='swiper_con'>整套80平方，2室1厅1卫1厨</view></swiper-item> 
+      <swiper-item><view class='swiper_con'>房客独享整套房屋</view></swiper-item>
+      <swiper-item><view class='swiper_con'>双人床 1.50米宽 2.00米长 2张</view></swiper-item>  
+    </swiper>
+    <!-- 房东信息 -->
+    <view class='landlord'>
+      <image src='{{list[2].phead}}'></image>
+      <view>janiedan</view>
+      <view>已实名认证</view>
+    </view>
+    <!-- 房间描述 -->
+    <view class='room'>
+      <view>房间描述</view>
+      <view>{{list[2].f_title}}...</view>
+      <view bindtap='describe'> 
+        <text>查看全部描述</text> 
+        <image src='/pages/img/red-right.png'></image>
+      </view>
+    </view>
+    <!-- 房客点评 -->
+    <view class='remark'>
+      <view>房客点评</view>
+      <view class="shop-star">
+          <view class="star-after">★★★★★</view>
+          <view class="star-before" style='width:{{list[2].d_point}}%'>★★★★★</view>
+      </view>
+      <view>
+      共{{list[2].d_point}}点评.图
+      <image src='/pages/img/right.png' class="tubiao"></image>
+      </view>
+    </view>
+    <!-- 房源位置 -->
+    <view class='location'>
+      <view>房源位置</view>
+      <view>
+        <map longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" covers="{{covers}}" show-location></map>
+        
+      </view>
+    </view>
+    <!-- 交易规则 -->
+    <view class='rules'>
+      <view>交易规则</view>
+      <view class='rules_o'>
+        <view><image src='/pages/img/yuding.png' class='tubiao'></image></view>
+        <view>
+          <view>预定方式</view>
+          <view>下单即可入住，无需房东确认</view>
+        </view>
+      </view>
+      <!--  -->
+      <view class='rules_o'>
+        <view><image src='/pages/img/tianshu.png' class='tubiao'></image></view>
+        <view>
+          <view>入住须知</view>
+          <view>最少入住1天，最多入住不限</view>
+        </view>
+      </view>
+      <!--  -->
+      <view class='rules_o'>
+        <view><image src='/pages/img/dingjin.png' class='tubiao'></image></view>
+        <view>
+          <view>在线订金比</view>
+          <view>订单确认后，在线支付房款100%作为订金</view>
+        </view>
+      </view>
+      <!--  -->
+      <view class='rules_o'>
+        <view><image class='tubiao'></image></view>
+        <view>
+          <view>押金</view>
+          <view>￥600，立即认证免押</view>
+        </view>
+      </view>
+      <!--  -->
+      <view class='rules_o'>
+        <view><image class='tubiao'></image></view>
+        <view>
+          <view>加客</view>
+          <view>￥50/人，允许加客2人，加客费用线下收取，需要加客请提前沟通。</view>
+        </view>
+      </view>
+      <!--  -->
+      <view class='rules_o'>
+        <view><image src='/pages/img/xuzhi.png' class='tubiao'></image></view>
+        <view>
+          <view>入住须知</view>
+          <view>独立卫生间、接待境外人士、允许做饭、不允许吸烟、不允许聚会、不允许带宠物</view>
+        </view>
+      </view>
+      <!--  -->
+      <view class='rules_o'>
+        <view><image class='tubiao'></image></view>
+        <view>
+          <view>特殊要求</view>
+          <view>1、请您凭个人有效身份证原件登记入住;
+                2. 请保管好门禁卡与钥匙;
+                3. 进出小家,复核房门已经关闭;
+                4. 出门记得相关电源已经关闭,未有燃气还在使用;
+                5. 雨天记得关闭窗户;
+                6. 洗澡时记得开启排风扇,保证淋浴室空气流通;
+                7. 若家电或配件损坏,请及时联系我｡
+                8.晚上23:00 以后入住的客人，因为需提前咨询。
+                9. 65岁以上长者须由家人陪伴入住.
+                10.不提供行李寄存服务。
+                11.虽然我会尽我所能为您提供一个旅途中家一样的温馨居停之所，但民宿非酒店，的确做不到24小时随叫随到的服务。入住后您就是这里的主人，相信您懂得淋浴的热水需要把水龙头向红点那边偏，电视机和机顶盒需同时开启，洗衣机每次加一瓶盖洗衣液而非半瓶.....我非常乐意解答您的疑问，但也请彼此尊重体谅。如果非紧急情况，比如凌晨两点五十八您不会因为不知道遥控器如何打开电视而拨打我的电话，我将非常感谢。
+                Keep the APT clean and keep quiet at night . Thank you!
+          </view>
+        </view>
+      </view>
+      <!--  -->
+    </view>
+    <!-- 退订须知 -->
+    <view class='know'>
+      <view>退订须知</view>
+      <view  bindtap='know'>
+        <text>根据房东设置的交易规则未早于入住日14：00 7天退订视为有责取消 ，应扣除取消订单时间点后 7天订金作为违约金，剩余钱款将被原路退还</text>
+        <view><image src='/pages/img/right.png' class='tubiao'></image></view>
+      </view>
+      <view class='regulation' bindtap='know'>
+        <text>退订细则</text>
+        <image src='/pages/img/red-right.png' class='tubiao vertiacal-middle'></image>
+      </view>
+    </view>
+    <!-- 底部 -->
+    <view class='bottom'>
+      <view class='bottom_o'>
+        <view>
+          <image src='/pages/img/liaotian.png' class='tubiao vertiacal-middle pr-5b'></image>
+          <text>在线聊天</text>
+        </view>
+        <view>
+          <text class='pr-3b'>￥{{list[2].price}}</text>
+          <text class='pr-5b font-22r'>共1晚</text>
+          <text class='text-white'>立刻预定</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

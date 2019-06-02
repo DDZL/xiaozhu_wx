@@ -1,0 +1,17 @@
+/* pages/describe/descride.wxss */
+.descride{
+  width: 90%;
+  margin:20% 5% 5% 5%;
+}
+.mt-3b{
+  margin-top: 3%;
+}
+.mt-5b{
+  margin-top: 5%;
+}
+.font-26r{
+  font-size: 26rpx;
+}
+.font-blod{
+  font-weight: bold;
+}

@@ -1,0 +1,70 @@
+/* pages/details/details.wxss */
+
+.merit>scroll-view{
+  white-space:nowrap;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  line-height: 45rpx;
+  padding-right:40rpx; 
+  padding-left: 20rpx;
+  
+  /* letter-spacing: 2px; */
+}
+.merit>view>image{
+  width: 32rpx;
+  height: 32rpx;
+}
+.merit{
+  display: flex;
+  width: 100% !important;
+  margin-bottom: 3%;
+}
+.d-text>view:nth-child(2){
+  font-size: 28rpx;
+  color:#acacac;
+}
+.d-text{
+  width:75%;
+  margin-top:-5%;
+  margin-left: 3%;
+}
+.d_price view:nth-child(3){
+  text-decoration:line-through;
+  color:#d8d7d7;
+}
+
+.d_price view:nth-child(2){
+  font-size: 28rpx;
+  
+}
+.d_price{
+  width: 100rpx !important;
+  background: rgb(253, 56, 56);
+  font-size: 20rpx;
+  color:white;
+  padding: 10rpx;
+  text-align: center;
+  position: absolute;
+  margin-top:-26%;
+  margin-left: 5%;
+  z-index:1;
+  border-radius: 10rpx;
+}
+
+.details_one>image:first-child{
+  width: 100%;
+}
+.details_one>image:nth-child(2){
+  width:120rpx;
+  height:120rpx;
+  border:2rpx solid #fff;
+  border-radius: 50%;
+  margin-top: -10%;
+  margin-left: 80%;
+}
+
+.xz_details{
+  margin-top:45%;
+}
+
+

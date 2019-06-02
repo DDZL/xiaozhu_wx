@@ -1,0 +1,46 @@
+<!--pages/know/know.wxml-->
+<nav-bar navbar-data="{{nvabarData}}"></nav-bar>
+<view class='know'>
+  <view class='topTabSwiper'>
+      <view class='tab m-5b  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>退订规则</view>
+      <view class='tab m-5b  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>入住规定</view>
+  </view>
+  <swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+    <!-- 退订规则 -->
+    <swiper-item>
+      <view class='swiper_con'>
+        <view>
+          <view class='font-blod'>交易规则</view>
+          <view class='mt-3b font-30r'>
+            根据房东设置的交易规则未早于入住日14：00 7天退订视为有责取消 ，应扣除取消订单时间点后 7天订金作为违约金，剩余钱款将被原路退还
+          </view>
+          <view class='mt-5b font-blod'>友情提示</view>
+          <view class='mt-3b font-30r'>
+            入住后如您认为图片与房间实际情况有较大差异时，可将能够证明能够存在较大差异的材料（如带有拍摄如期水印的实地拍摄照片、短视频等）提供给客服进行核实；如小猪工作人员核查认为材料真实、有效，小猪将安排专门的客服人员与您联系，并尽最大可能为您解决问题。因自然灾害及其他不可抗力因素的退订需求，有您和房东协商解决。
+            已支付押金将在您入住完成后原路返回，该欠款不包含在订单总金额内。
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+    <!-- 入住规定 -->
+    <swiper-item>
+      <view class='swiper_con'>
+        <view class='know_t'>
+          <view>允许做饭</view>
+          <view>不允许带宠物</view>
+          <view>允许聚会</view>
+          <view>不允许吸烟</view>
+          <view>接待境外人员</view>
+        </view>
+        <view class='mt-5b font-blod'>入住人数</view>
+        <view class='mt-3b font-30r'>
+          宜居2人，允许加客1人，加客费用线下收取，每加一位客人收取服务费50元
+        </view>
+        <view class='mt-5b font-blod'>其他费用</view>
+        <view class='mt-3b font-30r'>
+          电费每天赠送10度电，超出需要客人自己承担哦
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

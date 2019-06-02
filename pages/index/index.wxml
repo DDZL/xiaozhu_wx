@@ -1,0 +1,29 @@
+<!--index.wxml-->
+
+<view class='xz_index'>
+<nav-bar navbar-data="{{nvabarData}}"></nav-bar>
+  <image src="{{list[0].photo}}"></image>
+  <view class="section">
+  <!-- 位置 -->
+    <view class="retailStore">
+      <view class="cnaps borderBottom">
+        <input class='text-left' placeholder-class='plhStyle' type='number' maxlength='35' placeholder='' bindinput="bindKeyInput" value='{{city}}' disabled></input>
+          <icon class="iconfont icon-dibiao"></icon>
+          <text class='w-35b'>我的位置</text>
+      </view>
+    </view>
+    <!-- 日期 -->
+    <view class='date-two'>
+      <view >
+        <text>{{time1}}</text>
+        <text class='text-black'>-</text>
+        <text>{{time2}}</text>
+      </view>
+      <view class='w-50b text-right'>
+        <text class='text-black font-24r'>共1晚</text>
+      </view>
+    </view>
+    <!-- 搜索 -->
+    <button bindtap='goToNext1'>查找房源</button>
+  </view> 
+</view>

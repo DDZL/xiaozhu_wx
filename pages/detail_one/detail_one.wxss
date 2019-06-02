@@ -1,0 +1,330 @@
+/* pages/detail_one/detail_one.wxss */
+/* 底部 */
+.bottom_o>view:nth-child(2){
+  width: 50%;
+  background: red;
+  border-radius: 50rpx;
+  margin-top:2%;
+  padding: 15rpx 15rpx 15rpx 35rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.bottom_o>view:first-child{
+  width: 30%;
+  font-size: 30rpx;
+  font-weight: bold;
+  padding: 3%;
+}
+.bottom_o{
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+}
+.bottom{
+  width: 100%;
+  height: 100rpx;
+  border-top: 1px solid rgb(206, 206, 206);
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+}
+/* 退订须知 */
+.regulation{
+  margin-top: 3%;
+  font-size: 28rpx;
+  color:red;
+}
+.know>view:nth-child(2)>view:nth-child(2){
+  line-height: 57px;
+}
+.know>view:nth-child(2){
+  display: flex;
+  margin-top:5%;
+  padding: 10rpx;
+  font-size: 28rpx;
+  background: rgb(206, 206, 206);
+  opacity: 0.8;
+}
+.know{
+  margin: 0 5% 15% 5%;
+}
+/* 交易规则 */
+.rules_o>view:nth-child(2)>view:first-child{
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+.rules_o>view:first-child{
+  margin:0 5% 0 0;
+}
+.rules_o{
+  display: flex; 
+  margin-top: 5%;
+  font-size: 26rpx;
+}
+.rules{
+  margin: 0 5% 5% 5%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+/* 房源位置 */
+.location>view:nth-child(2)>map{
+  width: 100% !important;
+  margin-top: 3%;
+}
+.location{
+  width: 90%;
+  border-top: 1px solid rgb(206, 206, 206);
+  border-bottom: 1px solid rgb(206, 206, 206);
+  padding: 5% 0 10% 0;
+  margin: 15% 5% 5% 5%;
+}
+/* 点评 */
+.remark>view:nth-child(3){
+  float:right;
+  font-size:28rpx;
+  font-weight: bold;
+  margin-top:3%;
+}
+.remark>view:nth-child(3)>image{
+  vertical-align: middle;
+}
+.shop-star{
+  position: absolute;
+  font-size: 56rpx;
+}
+.star-after{
+  color:#e2e2e2;  /*底层灰色星星*/
+}
+.star-before{
+  position: absolute;
+  top:0;
+  left:0;
+  overflow: hidden;
+  color:#f89822;
+}
+.remark{
+  margin:5%;
+}
+/* 房间描述 */
+  .room>view:nth-child(3)>image{
+    width: 18px;
+    height:18px;
+    vertical-align: middle;
+  }
+  .room>view:nth-child(3){
+    font-size: 30rpx;
+    color:red;
+    padding-bottom: 5%;
+
+  }
+  .room>view:nth-child(2){
+    font-size: 30rpx;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .room{
+    width: 90%;
+    margin:5% auto;
+    border-bottom: 1px solid rgb(206, 206, 206);
+  }
+/* 房东信息 */
+.landlord>view:nth-child(2){
+  font-size: 38rpx;
+  color:#000;
+  font-weight: bold;
+}
+.landlord>image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 2%;
+}
+.landlord{
+  width: 90%;
+  height: 250rpx;
+  margin: 5% auto;
+  border-bottom: 1px solid rgb(206, 206, 206);
+  text-align: center;
+  font-size: 24rpx;
+  color: grey;
+}
+/* 选项卡 */
+  .swiper{
+    width: 95%;
+    height: 55px;
+    background:rgb(179, 178, 178);
+    text-align: center;
+    line-height: 55px;
+    font-size: 28rpx;
+    border-radius: 0 0 15rpx 15rpx;
+    margin:0 3% 3% 3%
+  }
+  .zhegai{
+    width:51px;
+    height: 59px; 
+    z-index: 9999;
+    opacity: 0;
+    margin-top:-100%;
+  }
+  .tab>image{
+    width:36px;
+    height: 36px;
+    text-align: center;
+  }
+  .tabBorer{
+    border-bottom: 1px solid red;
+  }
+  .TabSwiper{
+    width: 95%;
+    font-size: 28rpx;
+    text-align: center;
+    background:lightgrey;
+    display: flex;
+    justify-content: space-around;
+    margin:3% 3% 0 3%;
+    padding-top: 20rpx;
+    border-radius: 15rpx 15rpx 0 0;
+  }
+/* 优惠信息 */
+  .choose view:nth-child(3)>text:first-child{
+    background: #fff;
+    font-size: 22rpx;
+    color:red;
+    border:1px solid red;
+    padding: 4rpx 25rpx 4rpx 25rpx;
+    margin:0 3% 0 3%;
+    border-radius: 6rpx;
+  }
+  .choose view:nth-child(2)>text:first-child{
+    background: #fff;
+    font-size: 22rpx;
+    color:red;
+    border:1px solid red;
+    padding: 4rpx 20rpx 4rpx 20rpx;
+    margin:0 3% 0 3%;
+    border-radius: 6rpx;
+  }
+  .choose view:first-child>text:first-child{
+    background: red;
+    font-size: 22rpx;
+    color:#fff;
+    padding: 4rpx 45rpx 4rpx 45rpx;
+    margin:0 3% 0 3%;
+    border-radius: 6rpx;
+  }
+  .choose view{
+    margin-bottom: 2%;
+    font-size: 26rpx;
+  }
+  .choose{
+    padding-bottom: 200rpx;
+  }
+  .maskLayer>view{
+    font-size: 28rpx;
+    color:gray;
+    margin:0 0 20rpx 20rpx;
+  }
+  .maskLayer>image{
+    margin: 20rpx 0 0rpx 20rpx;
+  }
+  .tiao{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    z-index: 20;
+  }
+  .special>image{
+    vertical-align: middle;
+    float: right;
+    padding-right: 3%;
+  }
+  .special>text:first-child{
+    background: red;
+    font-size: 22rpx;
+    color:#fff;
+    padding: 4rpx 20rpx 4rpx 20rpx;
+    margin:0 3% 0 3%;
+    border-radius: 6rpx;
+  }
+  .special{
+    font-size: 26rpx;
+    margin-top: 3%;
+  }
+/* 优势 */
+  .merit>scroll-view{
+    white-space:nowrap;
+    box-sizing: border-box;
+    font-size: 26rpx;
+    color:#ee2f17;
+    line-height: 45rpx;
+    padding-right:40rpx; 
+    padding-left: 20rpx;
+  }
+  .merit>view>image{
+    width: 32rpx;
+    height: 32rpx;
+  }
+  .merit{
+    display: flex;
+    width: 100% !important;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  /* 图片、价格 */
+  .do-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top:-12%;
+    padding: 0 20rpx 0 20rpx;
+  }
+  .do-text>view:first-child{
+    background:#000;
+    opacity: 0.8;
+    color:red;
+    padding: 15rpx;
+    font-size: 32rpx;
+    font-weight: bold;
+    letter-spacing: -1px;
+    border-radius: 10rpx;
+  }
+  .do-text>view:nth-child(2)>image{
+    width:16px;
+    height: 16px;
+    vertical-align: middle;
+  }
+  .do-text>view:nth-child(2)>text{
+    font-size: 22rpx;
+    letter-spacing: 1px;
+    color:#fff;
+  }
+  .d_one>image{
+    width: 100%;
+  }
+/* 整体 */
+  .detail_one{
+    margin-top:16%;
+  }
+  .tubiao{
+    width: 38rpx;
+    height: 38rpx;
+  }
+  .vertiacal-middle{
+    vertical-align: middle;
+  }
+  .pr-5b{
+    padding-right: 5%;
+  }
+  .pr-3b{
+    padding-right: 3%;
+  }
+  .text-white{
+    color:#fff;
+  }
+  .font-blod{
+    font-weight: bold;
+  }
+  .font-22r{
+    font-size: 22rpx;
+  }

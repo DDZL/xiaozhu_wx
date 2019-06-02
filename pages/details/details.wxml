@@ -1,0 +1,29 @@
+<!--pages/details/details.wxml-->
+<!-- 引入自定义组件。'navbar-data'中navbar是自定义名字，决定了组件中'navbarData'的名字 -->
+<nav-bar navbar-data="{{nvabarData}}"></nav-bar>
+<view class='xz_details'>
+  <!-- 第一个商品 -->
+  <view class='details_one' wx:for="{{list}}" wx:key="index"> 
+    <image src="{{item.photo}}" bindtap='goToNext2'></image>
+    <image src="{{item.phead}}"></image>
+
+    <view class='d_price'>
+      <view>{{item.o_price}}</view>
+      <view>￥{{item.price}}</view>
+      <view>原价￥{{item.p_title}}</view>
+    </view>
+    <view class='d-text'>
+      <view>{{item.title}}</view>
+      <view>{{item.xinxi}}</view>
+      
+    </view>
+    <view class='merit'>
+        <view>
+          <image src='/pages/img/mai.png'></image>
+        </view>
+        <scroll-view scroll-x="true">
+          <text>速订.先住后付.特价.优品.差旅首选.免押金.长租优惠.验证.实拍.智能门牌</text>
+        </scroll-view>
+      </view>
+  </view>
+</view>

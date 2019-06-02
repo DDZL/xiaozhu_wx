@@ -1,0 +1,42 @@
+/* pages/know/know.wxss */
+.know_t>view{
+  padding: 3% 0 3% 0;
+  border-bottom:1px solid rgb(202, 202, 202);
+  font-size: 28rpx;
+}
+.swiper_con{
+  width: 90%;
+}
+.know>.topTabSwiper{
+  display: flex;
+  justify-content:center;
+  font-size: 30rpx;
+}
+.know{
+  margin:20% 0 5% 5%;
+}
+.tabBorer{
+  width: 150rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background: red;
+  color:white;
+  border-radius: 40rpx;
+  box-shadow: 10px 5px 15px 0 rgb(245, 85, 22);
+}
+.font-30r{
+  font-size: 30rpx;
+}
+.font-blod{
+  font-weight: bold;
+}
+.m-5b{
+  margin: 5%;
+}
+.mt-3b{
+  margin-top: 3%;
+}
+.mt-5b{
+  margin-top: 5%;
+}

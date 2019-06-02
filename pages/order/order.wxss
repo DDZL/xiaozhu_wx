@@ -1,0 +1,50 @@
+/* pages/order/order.wxss */
+.swiper_con>view>image{
+  width:290rpx;
+  height: 230rpx;
+  margin-bottom: 3%;
+}
+.swiper_con>view{
+  width: 95%;
+  text-align: center;
+  margin-top: 45%;
+  font-size: 30rpx;
+}
+
+.order>.topTabSwiper{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  padding: 3%;
+  font-size: 30rpx;
+  color:grey;
+}
+.tabBorer{
+  border-bottom: 1px solid black;
+  padding-bottom: 3%;
+  width: 45%;
+  text-align: center;
+  color:black;
+}
+.order{
+  margin:20% 0 0 0; 
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+}
+    .list_item {
+      flex-grow: 1;
+      box-sizing: border-box;
+      height: 85rpx;
+      font-size: 32rpx;
+      text-align: center;
+      line-height: 85rpx;
+      border-bottom: 4rpx solid #eee;
+    }
+    .on {
+      border-bottom: 4rpx solid #fe2a7e;
+      color: #fe2a7e;
+    }

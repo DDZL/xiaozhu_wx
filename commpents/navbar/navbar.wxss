@@ -1,0 +1,133 @@
+/* commpents/navbar/navbar.wxss */
+/* 顶部要固定定位   标题要居中   自定义按钮和标题要和右边微信原生的胶囊上下对齐 */
+.nav-wrap {
+  position: fixed;
+  width: 100%;
+  
+  top: 0;
+  background: #fff;
+  color: #000; 
+  z-index: 30;
+}
+/* 标题要居中 */
+.nav-title {
+  position: absolute;
+  text-align: center;
+  max-width: 400rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 34rpx;
+  color: #2c2b2b;
+  font-weight: 600;
+}
+
+.nav-capsule {
+  display: flex;
+  align-items: center;
+  margin-left: 30rpx;
+  width: 140rpx;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.navbar-v-line {
+  width: 1px;
+  height: 32rpx;
+  background-color: #e5e5e5;
+}
+
+.back-pre, .back-home {
+  width: 38rpx;
+   height: 38rpx;
+  margin-top: 4rpx;
+  padding: 10rpx;
+}
+.nav-capsule .back-home {
+  width: 36rpx;
+  height: 40rpx;
+  margin-top: 3rpx;
+}
+
+.top-news{
+  width:100%;
+  height:220rpx;
+  margin-top: 16%;
+  position: fixed;
+  top:2%;
+  left:0;
+  z-index:30;
+  background: linear-gradient(to right,white,#fff,white); 
+  }
+  .tap view>navigator>image{
+  vertical-align: middle;
+  width:16px;
+  height:16px;
+}
+.tap view>navigator{
+  font-size: 24rpx;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+}
+.tap view{
+  display: flex;
+}
+.tap{
+  padding:20rpx 0 20rpx 0;
+  margin-left: 20rpx;
+  display: flex;
+  justify-content: center;
+}
+
+view.search {
+    display: flex;
+    flex-direction: row;
+    height: 78rpx;
+    background: #b4b4b4;
+    align-items: center;
+    
+}
+
+view.searchItem {
+    display: flex;
+    width: 100%;
+    background: #fff;
+    flex-direction: row;
+    border-radius: 40rpx;
+    margin-right: 20rpx;
+    margin-left: 20rpx;
+}
+
+view.searchItem image {
+    height: 42rpx;
+    width: 42rpx;
+    align-self: center;
+    margin-left: 10rpx;
+    margin-right: 20rpx;
+}
+
+view.searchItem input {
+    flex: 1;
+    font-size: 30rpx;
+}
+
+.scroll-view_H{
+  white-space:nowrap;
+  width: 100%;
+  box-sizing: border-box;
+  }
+.nav-name{
+  display:inline-block;
+  font-size:24rpx;
+  color: #2b2e33;
+  border: 1px dashed rgba(128, 128, 128, 0.438);
+  border-radius: 40rpx;
+  padding:5rpx 20rpx 5rpx 20rpx;
+  margin:5rpx;
+  }
+  

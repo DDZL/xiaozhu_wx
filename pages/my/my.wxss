@@ -1,0 +1,114 @@
+/* pages/my/my.wxss */
+.button1{
+  display: flex;
+  justify-content: space-between;
+}
+.my_input button image{
+  width: 50rpx;
+  height:50rpx;
+  margin:0 2% 0 2%;
+  vertical-align: middle; /* 垂直居中 */
+}
+.my_input button{
+  border-radius: 20rpx;
+  width: 95%;
+  height: 140rpx;
+  line-height: 140rpx;
+  opacity: 0.8;
+  margin: 10rpx auto;
+}
+.my_input{
+  margin-top:40%;
+}
+.my_tx>view>image{
+  width:200rpx;
+  height: 200rpx;
+  border:6rpx solid white;
+  border-radius: 50%;
+  margin-top:10%; 
+}
+.my_tx>text{
+  color:#fff;
+}
+.my_tx{
+  text-align: center;
+  position: relative;
+}
+.xiaozhu_my>image:first-child{
+  height: 550px;
+  position: absolute;
+}
+
+page{
+  width: 100%;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+.pt-50r{
+  padding-top: 50rpx;
+}
+.w-35b{
+  width:40%;
+}
+/* 媒体查询 */
+@media screen and (max-width: 320px) {
+      .xiaozhu_my {
+        height: 90%;
+        margin-top: 22%;
+        }
+        .my_input{
+          margin-top: 30%;
+        }
+        page{
+          height: 86%;
+        }
+        .xiaozhu_my>image:first-child{
+          height: 448px;
+        }
+        .my_tx{
+          top: 10%;
+        }
+    }
+    @media screen and (width: 360px) {
+      .xiaozhu_my {
+        height:80%;
+        }
+        .my_input{
+          margin-top: 50%;
+        }
+        page{
+          height: 86%;
+        }
+        .xiaozhu_my>image:first-child{
+          margin-top: 19%;
+          height: 517px;
+          width: 100%;
+        }
+        .my_tx{
+          top: 20%;
+        }
+    }
+    @media screen and (width: 375px) {
+      .xiaozhu_my {
+        height:80%;
+        }
+        .my_input{
+          margin-top: 50%;
+        }
+        page{
+          height: 86%;
+        }
+        .xiaozhu_my>image:first-child{
+          margin-top: 19%;
+          height: 548px;
+          width: 100%;
+        }
+        .my_tx{
+          top: 20%;
+        }
+        
+    }
